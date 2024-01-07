@@ -10,7 +10,7 @@ export function Hero() {
               the old component has been removed from the framework. Why create
               custom CSS when you can use utilities?
             </p>
-            <a className="btn btn-primary btn-lg" href="#!">
+            <a className="btn btn-dark btn-lg" href="#!">
               Call to action
             </a>
           </div>
