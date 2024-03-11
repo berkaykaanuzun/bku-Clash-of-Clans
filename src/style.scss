@@ -1,3 +1,46 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../src/Components/card.module.scss";
+
+
+@media only screen and (min-width: 1681px){
+    .hero-banner{
+      height: 37vw;
+    }
+  }
+
+  .hero-phone{
+margin-left: -80%;
+    height: 500px;
+  }
+
+  .download-sec{
+    padding: 160px 0;
+  }
+
+  .download-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .download-title{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .download-text{
+    color: #00000080;
+  }
+
+.download-btn{
+    max-height: 50px;
+}
+
+  .download-btn-group{
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }

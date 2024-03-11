@@ -6,10 +6,10 @@ export function Card(props) {
       <div className="wrapper">
         <div className={`clash-card ${props.character}`}>
           <div
-            className={`clash-card__image clash-card__image--${props.character}`}
+            className={`clash-card__image clash-card__image--${props.background}`}
           >
             <img
-              src={`https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/${props.character}.png`}
+              src={`./src/assets/images/${props.image}`}
               alt={props.character}
             />
           </div>
@@ -26,7 +26,8 @@ export function Card(props) {
           >
             <div className="one-third">
               <div className="stat">
-                20<sup>S</sup>
+                {props.value}
+                <sup>{props.time}</sup>
               </div>
               <div className="stat-value">Training</div>
             </div>

@@ -20,6 +20,12 @@ $archer: #ee5487;
 $giant: #f6901a;
 $goblin: #82bb30;
 $wizard: #4facff;
+$lava-hound: #622d1e;
+$balloon: #e16115;
+$dragon: #67476e;
+$pekka: #4e5867;
+$wall-breaker: #7b7266;
+$hog-rider: #6c352a;
 
 *,
 *:before,
@@ -79,7 +85,7 @@ body {
 }
 
 .clash-card__image--barbarian {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
+  background: url("../../src/assets/images/barbarian-bg.webp");
   img {
     width: 400px;
     position: absolute;
@@ -89,7 +95,7 @@ body {
 }
 
 .clash-card__image--archer {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
+  background: url("../../src/assets/images/archer-bg.webp");
   img {
     width: 400px;
     position: absolute;
@@ -99,7 +105,7 @@ body {
 }
 
 .clash-card__image--giant {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg");
+  background: url("../../src/assets/images/giant-bg.webp");
   img {
     width: 340px;
     position: absolute;
@@ -109,7 +115,7 @@ body {
 }
 
 .clash-card__image--goblin {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
+  background: url("../../src/assets/images/goblin-bg.webp");
   img {
     width: 370px;
     position: absolute;
@@ -119,12 +125,66 @@ body {
 }
 
 .clash-card__image--wizard {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg");
+  background: url("../../src/assets/images/wizard-bg.webp");
   img {
     width: 345px;
     position: absolute;
     top: -28px;
     left: -10px;
+  }
+}
+.clash-card__image--lava-hound {
+  background: url("../../src/assets/images/lava-hound-bg.webp");
+  img {
+    width: 360px;
+    position: absolute;
+    top: -40px;
+    left: -50px;
+  }
+}
+.clash-card__image--balloon {
+  background: url("../../src/assets/images/balloon-bg.webp");
+  img {
+    width: 367px;
+    position: absolute;
+    top: -35px;
+    left: -36px;
+  }
+}
+.clash-card__image--dragon {
+  background: url("../../src/assets/images/dragon-bg.webp");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+  }
+}
+.clash-card__image--pekka {
+  background: url("../../src/assets/images/pekka-bg.webp");
+  img {
+    width: 375px;
+    position: absolute;
+    top: -44px;
+    left: -70px;
+  }
+}
+.clash-card__image--wall-breaker {
+  background: url("../../src/assets/images/wall-breaker-bg.webp");
+  img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+  }
+}
+.clash-card__image--hog-rider {
+  background: url("../../src/assets/images/hog-rider-bg.webp");
+  img {
+    width: 380px;
+    position: absolute;
+    top: -40px;
+    left: -40px;
   }
 }
 
@@ -150,9 +210,26 @@ body {
 .clash-card__level--goblin {
   color: $goblin;
 }
-
 .clash-card__level--wizard {
   color: $wizard;
+}
+.clash-card__level--lava-hound {
+  color: $lava-hound;
+}
+.clash-card__level--balloon {
+  color: $balloon;
+}
+.clash-card__level--dragon {
+  color: $dragon;
+}
+.clash-card__level--pekka {
+  color: $pekka;
+}
+.clash-card__level--wall-breaker {
+  color: $wall-breaker;
+}
+.clash-card__level--hog-rider {
+  color: $hog-rider;
 }
 
 .clash-card__unit-name {
@@ -209,6 +286,48 @@ body {
 
   .one-third {
     border-right: 1px solid darken($wizard, 6%);
+  }
+}
+.clash-card__unit-stats--lava-hound {
+  background: $lava-hound;
+
+  .one-third {
+    border-right: 1px solid $lava-hound;
+  }
+}
+.clash-card__unit-stats--balloon {
+  background: $balloon;
+
+  .one-third {
+    border-right: 1px solid $balloon;
+  }
+}
+.clash-card__unit-stats--dragon {
+  background: $dragon;
+
+  .one-third {
+    border-right: 1px solid $dragon;
+  }
+}
+.clash-card__unit-stats--pekka {
+  background: $pekka;
+
+  .one-third {
+    border-right: 1px solid $pekka;
+  }
+}
+.clash-card__unit-stats--wall-breaker {
+  background: $wall-breaker;
+
+  .one-third {
+    border-right: 1px solid $wall-breaker;
+  }
+}
+.clash-card__unit-stats--hog-rider {
+  background: $hog-rider;
+
+  .one-third {
+    border-right: 1px solid $hog-rider;
   }
 }
 
