@@ -7,7 +7,17 @@ import { Card } from "../../Components/Card";
 export function Features() {
   const elRef = useBlazeSlider({
     all: {
+      enableAutoplay: true,
+      autoplayInterval: 2000,
+      transitionDuration: 300,
+      transitionTimingFunction: 'linear',
       slidesToShow: 3,
+    },
+    '(max-width: 1200px)': {
+      slidesToShow: 2,
+    },
+    '(max-width: 768px)': {
+      slidesToShow: 1,
     },
   });
   const cards = [
