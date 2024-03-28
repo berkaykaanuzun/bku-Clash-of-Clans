@@ -13,7 +13,7 @@ const handleClick = () => {
     // Bir saniye sonra tıklamaya izin verme durumunu yeniden true yap
     setTimeout(() => {
       setClickAllowed(true);
-    }, 300); // 1000 milisaniye = 1 saniye
+    }, 10); // 1000 milisaniye = 1 saniye
   }
 };
 
