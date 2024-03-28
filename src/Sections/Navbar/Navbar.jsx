@@ -1,4 +1,22 @@
+import { useState } from "react";
+
 export function Navbar() {
+  const [open, setOpen] = useState(false);
+  const [clickAllowed, setClickAllowed] = useState(true);
+
+const handleClick = () => {
+  if (clickAllowed) {
+    setOpen(!open);
+    console.log(open);
+    setClickAllowed(false); // Tıklamaya izin verme durumunu false olarak ayarla
+
+    // Bir saniye sonra tıklamaya izin verme durumunu yeniden true yap
+    setTimeout(() => {
+      setClickAllowed(true);
+    }, 300); // 1000 milisaniye = 1 saniye
+  }
+};
+
   return (
     <>
       {
@@ -85,7 +103,7 @@ export function Navbar() {
                 </a>
               </li>
             </ul>
-            <div className="mobile-menu">
+            <div onClick={handleClick} className="mobile-menu">
               <input
                 type="checkbox"
                 id="checkbox4"
@@ -102,6 +120,31 @@ export function Navbar() {
               </label>
             </div>
           </div>
+          { open &&
+          <div className="navigation-mobile">
+          <ul className="navigation-list-mobile">
+              <li className="active">
+                <a href="#" className="top ">
+                  Games
+                </a>
+              </li>
+              <li>
+                <a href="#teamup" className="team">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#social" className="social">
+                  Support
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="about">
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </div>}
         </nav>
       }
 
