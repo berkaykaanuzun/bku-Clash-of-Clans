@@ -7,7 +7,7 @@ export function Download() {
           <div className="hero-phone-group">
             <img
               className="hero-phone"
-              src="../../../src/assets/images/hero-phone.webp"
+              src="/assets/images/hero-phone.webp"
             ></img>
             </div>
           </div>
@@ -26,16 +26,16 @@ export function Download() {
               <div className="download-btn-group">
                 <img
                   className="download-btn"
-                  src="../../../src/assets/images/appstore.webp"
+                  src="/assets/images/appstore.webp"
                 ></img>
                 <img
                   className="download-btn"
-                  src="../../../src/assets/images/googleplay.webp"
+                  src="/assets/images/googleplay.webp"
                 ></img>
 
                 <img
                   className="download-btn"
-                  src="../../../src/assets/images/amazon.webp"
+                  src="/assets/images/amazon.webp"
                 ></img>
               </div>
             </div>

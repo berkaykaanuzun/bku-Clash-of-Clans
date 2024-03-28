@@ -74,7 +74,7 @@ const handleClick = () => {
                 <a href="">
                   <img
                     className="creaters-icon"
-                    src="../../../src/assets/images/creaters-icon.svg"
+                    src="/assets/images/creaters-icon.svg"
                   />
                 </a>
               </li>
@@ -82,7 +82,7 @@ const handleClick = () => {
                 <a href="">
                   <img
                     className="make-icon"
-                    src="../../../src/assets/images/make-icon.svg"
+                    src="/assets/images/make-icon.svg"
                   />
                 </a>
               </li>
@@ -90,7 +90,7 @@ const handleClick = () => {
                 <a href="">
                   <img
                     className="id-icon"
-                    src="../../../src/assets/images/id-icon.svg"
+                    src="/assets/images/id-icon.svg"
                   />
                 </a>
               </li>
@@ -98,7 +98,7 @@ const handleClick = () => {
                 <a href="">
                   <img
                     className="search-icon"
-                    src="../../../src/assets/images/search-icon.webp"
+                    src="/assets/images/search-icon.webp"
                   />
                 </a>
               </li>

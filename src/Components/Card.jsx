@@ -9,7 +9,7 @@ export function Card(props) {
             className={`clash-card__image clash-card__image--${props.background}`}
           >
             <img
-              src={`./src/assets/images/${props.image}`}
+              src={`/assets/images/${props.image}`}
               alt={props.character}
             />
           </div>
