@@ -108,6 +108,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  
 }
 .mobile-list.navigation-list {
   width: 100%;
@@ -657,4 +658,42 @@ footer .footer-menu li:hover {
   .navigation-mobile ul {
     width: 100%;
   }
+}
+
+.navigation-mobile.open{
+  height: initial;
+  opacity: 100%;
+  transition: 1s ease;
+  top: 7%;
+}
+
+.navigation-mobile.off{
+top: -100%;
+transition: 1s ease;
+
+}
+
+@media(max-width: 576px){
+  footer{
+    padding: 0 0 100px 0;
+  }
+  .store-logos.footer-store img{
+    height: 40px;
+  }
+  footer .footer-menu ul{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer .footer-menu li{
+    margin-right: 15px;
+  }
+  .hero-phone {
+    width: 100%;
+    height: auto;
+}
+.hero-phone-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }

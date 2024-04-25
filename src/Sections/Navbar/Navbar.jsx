@@ -4,18 +4,18 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [clickAllowed, setClickAllowed] = useState(true);
 
-const handleClick = () => {
-  if (clickAllowed) {
-    setOpen(!open);
-    console.log(open);
-    setClickAllowed(false); // Tıklamaya izin verme durumunu false olarak ayarla
+  const handleClick = () => {
+    if (clickAllowed) {
+      setOpen(!open);
+      console.log(open);
+      setClickAllowed(false); // Tıklamaya izin verme durumunu false olarak ayarla
 
-    // Bir saniye sonra tıklamaya izin verme durumunu yeniden true yap
-    setTimeout(() => {
-      setClickAllowed(true);
-    }, 10); // 1000 milisaniye = 1 saniye
-  }
-};
+      // Bir saniye sonra tıklamaya izin verme durumunu yeniden true yap
+      setTimeout(() => {
+        setClickAllowed(true);
+      }, 10); // 1000 milisaniye = 1 saniye
+    }
+  };
 
   return (
     <>
@@ -88,10 +88,7 @@ const handleClick = () => {
               </li>
               <li>
                 <a href="">
-                  <img
-                    className="id-icon"
-                    src="/assets/images/id-icon.svg"
-                  />
+                  <img className="id-icon" src="/assets/images/id-icon.svg" />
                 </a>
               </li>
               <li className="search-nav">
@@ -120,9 +117,9 @@ const handleClick = () => {
               </label>
             </div>
           </div>
-          { open &&
-          <div className="navigation-mobile">
-          <ul className="navigation-list-mobile">
+
+          <div className={`navigation-mobile ${open ? "open" : "off"}`}>
+            <ul className="navigation-list-mobile">
               <li className="active">
                 <a href="#" className="top ">
                   Games
@@ -144,7 +141,7 @@ const handleClick = () => {
                 </a>
               </li>
             </ul>
-          </div>}
+          </div>
         </nav>
       }
 
