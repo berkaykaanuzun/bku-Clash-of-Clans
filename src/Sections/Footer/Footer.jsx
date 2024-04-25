@@ -41,7 +41,7 @@ export function Footer() {
             </div>
             <div>
               <p className="copyright">
-              <a href="https://www.linkedin.com/in/berkaykaanuzun/">  Tüm Hakları Saklıdır.Tasarım ve Uygulama © 2023 <span>Berkay Kaan Uzun</span></a>
+              <a href="https://www.linkedin.com/in/berkaykaanuzun/">  Tüm Hakları Saklıdır.Tasarım ve Uygulama © 2023 <br className="d-sm-none"/> <span>Berkay Kaan Uzun</span></a>
               </p>
             </div>
 
